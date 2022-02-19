@@ -1,0 +1,1 @@
+g++ -o "/root/projects/Send_OUt/bin/x64/Debug/Send_OUt.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /root/projects/Send_OUt/obj/x64/Debug/main.o /root/projects/Send_OUt/obj/x64/Debug/utils.o /root/projects/Send_OUt/obj/x64/Debug/zinx.o /root/projects/Send_OUt/obj/x64/Debug/ZinxTCP.o

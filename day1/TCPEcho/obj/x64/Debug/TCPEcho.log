@@ -1,0 +1,10 @@
+﻿  Cleaning remote project directory
+  Validating sources
+  Copying sources remotely to '10.0.0.179'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  Linking objects
+  TCPEcho.vcxproj -> E:\classes\GameServerDev\day1\TCPEcho\bin\x64\Debug\TCPEcho.out

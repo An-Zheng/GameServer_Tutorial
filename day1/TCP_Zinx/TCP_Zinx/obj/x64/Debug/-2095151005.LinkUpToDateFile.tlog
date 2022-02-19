@@ -1,0 +1,1 @@
+g++ -o "/root/projects/TCP_Zinx/bin/x64/Debug/TCP_Zinx.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /root/projects/TCP_Zinx/obj/x64/Debug/main.o /root/projects/TCP_Zinx/obj/x64/Debug/utils.o /root/projects/TCP_Zinx/obj/x64/Debug/zinx.o /root/projects/TCP_Zinx/obj/x64/Debug/ZinxTCP.o

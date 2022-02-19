@@ -1,0 +1,28 @@
+﻿  Cleaning remote project directory
+  Validating sources
+  Copying sources remotely to '10.0.0.179'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  utils.cpp
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\utils.cpp(156,28): warning : unused variable ‘oUserDataMsg’ [-Wunused-variable]
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\utils.cpp(156,28): warning :   156 |  GET_REF2DATA(UserDataMsg, oUserDataMsg, _oNextMsg);
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\utils.cpp(156,28): warning :       |                            ^~~~~~~~~~~~
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\zinx.h(29,128): message : in definition of macro ‘GET_REF2DATA’
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\zinx.h(29,128): message :    29 | #define GET_REF2DATA(type, ref, orig)  type * pref = dynamic_cast<type *>(&orig); if (nullptr == pref) {return nullptr;} type &ref = dynamic_cast<type&>(orig)
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\zinx.h(29,128): message :       |                                                                                                                                ^~~
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\utils.cpp(167,21): warning : comparison of integer expressions of different signedness: ‘int’ and ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\utils.cpp(167,21): warning :   167 |   for (int i = 0; i < _szData.size(); ++i)
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\utils.cpp(167,21): warning :       |                   ~~^~~~~~~~~~~~~~~~
+  zinx.cpp
+  ZinxTCP.cpp
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\ZinxTCP.cpp(5,9): warning : deleting object of abstract class type ‘IZinxTcpConnFact’ which has non-virtual destructor will cause undefined behavior [-Wdelete-non-virtual-dtor]
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\ZinxTCP.cpp(5,9): warning :     5 |  delete m_ConnFac;
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\ZinxTCP.cpp(5,9): warning :       |         ^~~~~~~~~
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\ZinxTCP.cpp(140,41): warning : comparison of integer expressions of different signedness: ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} and ‘ssize_t’ {aka ‘long int’} [-Wsign-compare]
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\ZinxTCP.cpp(140,41): warning :   140 |  if ((0 <= m_DataFd) && (_output.size() == send(m_DataFd,pOut,_output.size(), 0)))
+E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\ZinxTCP.cpp(140,41): warning :       |                          ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Linking objects
+  TCP_Zinx.vcxproj -> E:\classes\GameServerDev\day1\TCP_Zinx\TCP_Zinx\bin\x64\Debug\TCP_Zinx.out
